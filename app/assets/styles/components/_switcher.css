@@ -1,0 +1,27 @@
+.$(prefix)-switcher {
+	--threshold: 30rem;
+	--large: calc(1 + 7 / 10);
+}
+
+.$(prefix)-switcher > * {
+	display: flex;
+	flex-wrap: wrap;
+	/* ↓ Multiply by -1 to make negative */
+	margin: calc(var(--space-brand) / 2 * -1);
+}
+
+.$(prefix)-switcher > * > * {
+	flex-grow: 1;
+	flex-basis: calc((var(--threshold) - (100% - var(--space-brand))) * 999);
+	/* ↓ Half the value to each element, combining to make the whole */
+	margin: calc(var(--space-brand) / 2);
+}
+
+/* .$(prefix)-switcher > * > :nth-child(1) {
+  flex-grow: var(--large);
+} */
+
+.$(prefix)-switcher > * > :nth-last-child(n + 4),
+.$(prefix)-switcher > * > :nth-last-child(n + 4) ~ * {
+	flex-basis: 100%;
+}

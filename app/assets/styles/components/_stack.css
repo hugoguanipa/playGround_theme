@@ -1,0 +1,10 @@
+.$(prefix)-stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	--space-brand: 1.5rem;
+}
+
+.$(prefix)-stack > * + * {
+	margin-top: var(--space-brand);
+}

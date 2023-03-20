@@ -1,0 +1,13 @@
+.$(prefix)-grid {
+	align-content: start;
+	display: grid;
+	gap: var(--space-brand);
+	grid-template-columns: 100%;
+}
+
+[data-layout="responsiveGrid"] {
+	grid-template-columns: repeat(
+		var(--n-cols),
+		minmax(min(var(--card-min), var(--card-max)), var(--grid-gutter))
+	);
+}

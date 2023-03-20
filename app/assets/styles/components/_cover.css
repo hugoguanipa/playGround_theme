@@ -1,0 +1,28 @@
+.$(prefix)-cover {
+	--min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	min-height: var(--min-height);
+	/* ↓ noPad padding: 0; */
+	padding: var(--padding-brand);
+}
+
+.$(prefix)-cover > * {
+	margin-top: var(--space-brand);
+	margin-bottom: var(--space-brand);
+}
+
+/* ↓ h2 is the centered selector but can be any selector */
+.$(prefix)-cover > :first-child:not(h2) {
+	margin-top: 0;
+}
+
+.$(prefix)-cover > :last-child:not(h2) {
+	margin-bottom: 0;
+}
+
+/* ↓ h2 is the centered selector but can be any selector */
+.$(prefix)-cover > h2 {
+	margin-top: auto;
+	margin-bottom: auto;
+}

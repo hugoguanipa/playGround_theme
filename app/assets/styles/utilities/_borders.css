@@ -1,0 +1,12 @@
+.$(prefix)-border-brand {
+	border: var(--border-thick) solid var(--border-color);
+	border-radius: var(--border-radius-brand);
+}
+
+.$(prefix)-border-200 {
+	--border-radius-brand: var(--border-radius-500);
+}
+
+.$(prefix)-border-sp-100 {
+	--border-radius-brand: var(--border-radius-500) var(--border-radius-100);
+}

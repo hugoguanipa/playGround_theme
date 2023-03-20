@@ -1,0 +1,13 @@
+.$(prefix)-cluster {
+	overflow: hidden;
+}
+.$(prefix)-cluster > * {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: calc(var(--space-brand) / 2 * -1);
+}
+.$(prefix)-cluster > * > * {
+	margin: calc(var(--space-brand) / 2);
+}

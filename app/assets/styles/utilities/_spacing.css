@@ -1,0 +1,147 @@
+/* Padding Block */
+.pbs-5 {
+	padding-top: var(--size5);
+}
+.pbs-10 {
+	padding-top: var(--size10);
+}
+.pbs-20 {
+	padding-top: var(--size20);
+}
+.pbs-30 {
+	padding-top: var(--size30);
+}
+.pbs-40 {
+	padding-top: var(--size40);
+}
+.pbs-50 {
+	padding-top: var(--size50);
+}
+.pbs-60 {
+	padding-top: var(--size60);
+}
+.pbs-70 {
+	padding-top: var(--size70);
+}
+.pbs-80 {
+	padding-top: var(--size80);
+}
+.pbs-90 {
+	padding-top: var(--size90);
+}
+.pbs-100 {
+	padding-top: var(--size100);
+}
+
+.pbe-5 {
+	padding-bottom: var(--size5);
+}
+.pbe-10 {
+	padding-bottom: var(--size10);
+}
+.pbe-20 {
+	padding-bottom: var(--size20);
+}
+.pbe-30 {
+	padding-bottom: var(--size30);
+}
+.pbe-40 {
+	padding-bottom: var(--size40);
+}
+.pbe-50 {
+	padding-bottom: var(--size50);
+}
+.pbe-60 {
+	padding-bottom: var(--size60);
+}
+.pbe-70 {
+	padding-bottom: var(--size70);
+}
+.pbe-80 {
+	padding-bottom: var(--size80);
+}
+.pbe-90 {
+	padding-bottom: var(--size90);
+}
+.pbe-100 {
+	padding-bottom: var(--size100);
+}
+
+/* Padding Inline */
+.pi-10 {
+	padding-left: var(--size10);
+	padding-right: var(--size10);
+}
+.pi-20 {
+	padding-left: var(--size20);
+	padding-right: var(--size20);
+}
+.pi-40 {
+	padding-left: var(--size40);
+	padding-right: var(--size40);
+}
+.pi-60 {
+	padding-left: var(--size60);
+	padding-right: var(--size60);
+}
+
+/* Margins */
+.mi-auto {
+	margin-inline: auto;
+}
+
+/* Margin Block */
+.mb-4 {
+	margin-block: var(--size40);
+}
+.mb-6 {
+	margin-block: var(--size60);
+}
+.mb-8 {
+	margin-block: var(--size80);
+}
+
+.mbs-small {
+	margin-top: var(--size10);
+}
+.mbs-inner {
+	margin-top: var(--size60);
+}
+.mbs-brand {
+	margin-top: var(--size80);
+}
+.mbs-large {
+	margin-top: var(--size100);
+}
+
+/* Section Sizez */
+.w-full {
+	width: 100%;
+}
+.max-content {
+	width: max-content;
+}
+.max600 {
+	max-width: 600px;
+}
+.max800 {
+	max-width: 800px;
+}
+.max1000 {
+	max-width: 1000px;
+}
+
+@media screen and (max-width: 760px) {
+	.pb-40m {
+		padding-top: var(--size40) !important;
+		padding-bottom: var(--size40) !important;
+	}
+	.pb-50m {
+		padding-top: var(--size50) !important;
+		padding-bottom: var(--size50) !important;
+	}
+	.pb-55m {
+		padding-top: var(--size55) !important;
+		padding-bottom: var(--size55) !important;
+	}
+}

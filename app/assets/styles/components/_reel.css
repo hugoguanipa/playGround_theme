@@ -1,0 +1,49 @@
+.$(prefix)-reel {
+	--itemWidth: auto;
+	--height: auto;
+	--trackColor: var(--blue-400);
+	--thumbColor: var(--red-600);
+	display: flex;
+	/* ↓ For images, which may be very large or use differing aspect ratios, we may want to set the Reel’s height. */
+	height: var(--height);
+	overflow-x: auto;
+	overflow-y: hidden;
+	scrollbar-color: var(--thumbColor) var(--trackColor);
+}
+
+.$(prefix)-reel::-webkit-scrollbar {
+	height: 1rem;
+}
+
+.$(prefix)-reel::-webkit-scrollbar-track {
+	background-color: var(--trackColor);
+}
+
+.$(prefix)-reel::-webkit-scrollbar-thumb {
+	background-color: var(--trackColor);
+	background-image: linear-gradient(
+		var(--trackColor) 0,
+		var(--trackColor) 0.25rem,
+		var(--thumbColor) 0.25rem,
+		var(--thumbColor) 0.75rem,
+		var(--trackColor) 0.75rem
+	);
+}
+
+.$(prefix)-reel > * {
+	flex: 0 0 var(--itemWidth);
+}
+
+.$(prefix)-reel > img {
+	height: 100%;
+	flex-basis: auto;
+	width: auto;
+}
+
+.$(prefix)-reel > * + * {
+	margin-left: var(--space-brand);
+}
+
+.$(prefix)-reel.overflowing {
+	padding-bottom: var(--space-brand);
+}

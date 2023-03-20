@@ -1,0 +1,158 @@
+:root {
+	$prefix: hg;
+	/* Globals */
+	/*--------------------------------------*/
+	/* Colors */
+	--blue-50: hsl(220, 60%, 97%);
+	--blue-100: hsl(213, 100%, 93%, 0.6);
+	--blue-200: hsl(206, 74%, 24%);
+	--blue-300: hsl(209, 100%, 90%);
+	--blue-400: hsl(204, 90%, 40%);
+	--blue-500: hsl(208, 100%, 36%);
+	--blue-600: hsl(223, 100%, 16%);
+	--blue-800: hsl(234, 94%, 6%);
+	--turquoise-200: hsl(187, 100%, 92%);
+	--turquoise-400: hsl(188, 100%, 42%);
+	--turquoise-435: hsl(188, 100%, 42%, 0.35);
+	--red-200: hsl(358, 95%, 93%);
+	--red-400: hsl(359, 100%, 67%);
+	--red-600: hsl(359, 100%, 60%);
+	--gray-200: hsl(215, 49%, 93%);
+	--gray-400: hsl(218, 13%, 52%);
+	--gray-600: hsl(217, 13%, 20%);
+	--white-color: hsl(0, 0%, 100%);
+	--black-color: hsl(0, 0%, 0%);
+
+	/* Fonts */
+	--font-weight-thin: 300;
+	--font-weight: 400;
+	--font-weight-bold: 800;
+	--font80: 0.88rem;
+	--font100: clamp(1rem, calc(1rem + ((1vw - 0.3625rem) * 0.1491)), 1.06rem);
+	--font200: clamp(
+		1.1rem,
+		calc(1.1rem + ((1vw - 0.3625rem) * 0.3727)),
+		1.25rem
+	);
+	--font300: clamp(
+		1.2rem,
+		calc(1.2rem + ((1vw - 0.3625rem) * 0.4472)),
+		1.38rem
+	);
+	--font400: clamp(1.3rem, calc(1.3rem + ((1vw - 0.3625rem) * 0.4969)), 1.5rem);
+	--font500: clamp(
+		1.35rem,
+		calc(1.35rem + ((1vw - 0.3625rem) * 0.5217)),
+		1.56rem
+	);
+	--font600: clamp(
+		1.45rem,
+		calc(1.45rem + ((1vw - 0.3625rem) * 0.4472)),
+		1.63rem
+	);
+	--font700: clamp(
+		1.9rem,
+		calc(1.9rem + ((1vw - 0.3625rem) * 0.5466)),
+		2.12rem
+	);
+	--font800: clamp(
+		2.8rem,
+		calc(2.8rem + ((1vw - 0.3625rem) * 2.3602)),
+		3.75rem
+	);
+
+	/* Width & Spacing */
+	--page-width: 1224px;
+	--explicit-width: 1;
+	--size5: 0.5rem;
+	--size10: 0.75rem;
+	--size20: 1rem;
+	--size25: 1.2rem;
+	--size30: 1.5rem;
+	--size40: 2rem;
+	--size50: 2.75rem;
+	--size55: 3rem;
+	--size60: 3.5rem;
+	--size70: 4rem;
+	--size80: clamp(4rem, calc(4rem + ((1vw - 0.3625rem) * 2.4845)), 5rem);
+	--size90: clamp(4.2rem, calc(4.2rem + ((1vw - 0.3625rem) * 3.8509)), 5.75rem);
+	--size100: clamp(4.5rem, calc(4.5rem + ((1vw - 0.3625rem) * 4.9689)), 6.5rem);
+	--size110: clamp(4.8rem, calc(4.8rem + ((1vw - 0.3625rem) * 6.7081)), 7.5rem);
+	--size120: clamp(5rem, calc(5rem + ((1vw - 0.3625rem) * 9.3168)), 8.75rem);
+
+	/* Transition & Transform */
+	--transition100: all 0.4s ease-in-out;
+	--transition200: all 0.2s ease-in;
+	--transform100: scale(1.2, 1.2);
+
+	/* Borders */
+	--border-size-100: 1px;
+	--border-radius-100: 4px;
+	--border-radius-200: 8px;
+	--border-radius-300: 12px;
+	--border-radius-400: 16px;
+	--border-radius-500: 24px;
+	--border-radius-600: 36px;
+
+	/* Contextual Tokens */
+	/*--------------------------------------*/
+	/* Color backgrounds */
+	--bg-brand: var(--blue-50);
+	--bg-secondary: var(--red-200);
+	--bg-tertiary: var(--turquoise-200);
+	--bg-accent: var(--gray-200);
+	--bg-white: var(--white-color);
+	--bg-gradient: transparent
+		linear-gradient(197deg, var(--blue-400) 0%, var(--blue-600) 100%) 0% 0%
+		no-repeat;
+
+	/* Colors */
+	--txt-brand: var(--blue-400);
+	--txt-secondary: var(--red-400);
+	--txt-tertiary: var(--turquoise-400);
+	--txt-accent: var(--gray-400);
+	--txt-white: var(--white-color);
+
+	/* Spacing */
+	--space-brand: var(--size20);
+	--padding-brand: var(--size20);
+	--padding-site: var(--size40);
+
+	/* Typography */
+	--font-family: "Roboto", sans-serif;
+	--line-height: 1.4;
+	--font-weight-brand: var(--font-weight);
+	--h1: var(--font800);
+	--h2: var(--font700);
+	--h3: var(--font600);
+	--h4: var(--font500);
+	--h5: var(--font400);
+	--body-txt: var(--font100);
+	--a-txt: var(--font100);
+
+	/* Component Tokens */
+	/*--------------------------------------*/
+	/* Grid Cards */
+	--card-min: 350px;
+	--card-max: 100%;
+	--n-cols: auto-fit;
+	--grid-gutter: 1fr;
+
+	/* Box */
+	--border-thick: var(--border-size-100);
+
+	/* Borders */
+	--border-color: var(--brand-color);
+	--border-radius-brand: var(--border-radius-200);
+
+	/* Buttons */
+	--button-padding: var(--size25) var(--size50);
+	--button-radius: var(--border-radius-600);
+	--button-font-size: var(--font200);
+	--button-font-weight: var(--font-weight-bold);
+
+	--button-text-color: var(--white-color);
+	--button-background-color: var(--red-400);
+	--button-hover-background-color: var(--red-600);
+	--button-border-color: var(--button-background-color);
+}

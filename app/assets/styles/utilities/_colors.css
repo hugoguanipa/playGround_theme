@@ -1,0 +1,50 @@
+/* Backgrounds */
+.bg-brand {
+	background-color: var(--bg-brand);
+}
+
+.bg-secondary {
+	background-color: var(--bg-secondary);
+}
+
+.bg-tertiray {
+	background-color: var(--bg-tertiary);
+}
+
+.bg-accent {
+	background-color: var(--bg-accent);
+}
+
+.bg-white {
+	background: var(--bg-white);
+}
+
+.bg-gradient {
+	background: var(--bg-gradient);
+}
+
+/* Typography Colors */
+.txt-brand > :is(h1, h2, h3, h4, h5, h6),
+.txt-brand {
+	color: var(--txt-brand);
+}
+
+.txt-secondary > :is(h1, h2, h3, h4, h5, h6),
+.txt-secondary {
+	color: var(--txt-secondary);
+}
+
+.txt-tertiary > :is(h1, h2, h3, h4, h5, h6),
+.txt-tertiary {
+	color: var(--txt-tertiaryt);
+}
+
+.txt-accent > :is(h1, h2, h3, h4, h5, h6),
+.txt-accent {
+	color: var(--txt-accent);
+}
+
+.txt-white > :is(h1, h2, h3, h4, h5, h6),
+.txt-white {
+	color: var(--txt-white);
+}

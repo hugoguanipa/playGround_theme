@@ -1,0 +1,58 @@
+.$(prefix)-btn {
+	background-color: var(--button-background-color);
+	border: var(--border-size) solid var(--button-border-color);
+	border-radius: var(--button-radius);
+	min-width: max-content;
+	display: block;
+	font-size: var(--button-font-size);
+	font-weight: var(--button-font-weight);
+	padding: var(--size20) var(--size40);
+	position: relative;
+	text-decoration: none;
+	transition: var(--transition100);
+}
+.$(prefix)-btn:active,
+.$(prefix)-btn:hover {
+	background-color: var(--button-hover-background-color);
+}
+.$(prefix)-btn svg {
+	height: 1em;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	right: 1em;
+	top: 1.2em;
+	transition: 0.5s;
+}
+.$(prefix)-btn path {
+	stroke: var(--button-text-color);
+}
+.$(prefix)-btn span {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	transition: 0.5s;
+}
+.$(prefix)-btn span,
+.$(prefix)-btn:hover span {
+	color: var(--button-text-color);
+}
+.$(prefix)-btn:hover span {
+	left: -0.6em;
+}
+.$(prefix)-btn:hover svg {
+	opacity: 1;
+	right: 0.8em;
+}
+
+@media (min-width: 590px) {
+	.$(prefix)-btn {
+		padding: var(--button-padding);
+	}
+	.$(prefix)-btn:hover svg {
+		right: 1.4em;
+	}
+}

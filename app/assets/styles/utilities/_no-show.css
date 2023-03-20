@@ -1,0 +1,29 @@
+/* For content that needs to be visually hidden but stay visible for screenreaders */
+@media (max-width: 790px) {
+  .no-show {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    opacity: 0;
+  }
+}
+@media (min-width: 790px) {
+  .no-show-desktop {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    opacity: 0;
+  }
+}

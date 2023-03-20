@@ -1,0 +1,17 @@
+/* Width */
+.$(prefix)-wrapper {
+	width: min(
+		100% - var(--padding-site),
+		calc(var(--page-width) * var(--explicit-width))
+	);
+	margin-inline: auto;
+	position: relative;
+}
+
+.$(prefix)-wrapper-120 {
+	--explicit-width: 1.2;
+}
+
+.$(prefix)-wrapper-80 {
+	--explicit-width: 0.8;
+}
